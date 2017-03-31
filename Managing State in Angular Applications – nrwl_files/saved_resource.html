@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- saved from url=(0079)https://blog.nrwl.io/media/e8e1ec0548d55c300cf1c8fe0c2d8208?postId=22b75ef5625f -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>watch-service.ts – Medium</title><meta name="twitter:widgets:csp" content="on"><meta name="robots" content="noindex"><!--<base target="_blank">--><base href="." target="_blank"><style>body {text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: "ff-tisa-web-pro", Georgia, Cambria, "Times New Roman", Times, serif; font-weight: 400; color: #333332; font-size: 18px; line-height: 1.4; margin: 0; background-color: white; overflow: hidden;}iframe {max-width: 100%;}</style></head><body><style>.gist .gist-file { margin-bottom: 0 !important; }.gist { text-rendering: auto; }</style><script src="./ddfece7c8a1c5eecb27974fd344bff06.js" charset="utf-8"></script><link rel="stylesheet" href="./gist-embed-9f0a4ad9c85ca776e669003688baa9d55f9db315562ce4d231d37dab2714c70a.css"><div id="gist44799643" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-watch-service-ts" class="file">
+    
+
+  <div itemprop="text" class="blob-wrapper data type-typescript">
+      <table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tbody><tr>
+        <td id="file-watch-service-ts-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-watch-service-ts-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-k">export</span> <span class="pl-k">class</span> <span class="pl-en">WatchService</span> {</td>
+      </tr>
+      <tr>
+        <td id="file-watch-service-ts-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-watch-service-ts-LC2" class="blob-code blob-code-inner js-file-line">  watched<span class="pl-k">:</span> {[<span class="pl-v">k</span><span class="pl-k">:</span><span class="pl-c1">number</span>]<span class="pl-k">:</span><span class="pl-c1">boolean</span>} <span class="pl-k">=</span> {};</td>
+      </tr>
+      <tr>
+        <td id="file-watch-service-ts-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-watch-service-ts-LC3" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-watch-service-ts-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-watch-service-ts-LC4" class="blob-code blob-code-inner js-file-line">  watch(<span class="pl-v">talk</span><span class="pl-k">:</span> <span class="pl-en">Talk</span>)<span class="pl-k">:</span> <span class="pl-c1">void</span> {</td>
+      </tr>
+      <tr>
+        <td id="file-watch-service-ts-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-watch-service-ts-LC5" class="blob-code blob-code-inner js-file-line">    <span class="pl-c1">console</span>.<span class="pl-c1">log</span>(<span class="pl-s"><span class="pl-pds">"</span>watch<span class="pl-pds">"</span></span>, <span class="pl-smi">talk</span>.<span class="pl-c1">id</span>);</td>
+      </tr>
+      <tr>
+        <td id="file-watch-service-ts-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-watch-service-ts-LC6" class="blob-code blob-code-inner js-file-line">    <span class="pl-c1">this</span>.<span class="pl-smi">watched</span>[<span class="pl-smi">talk</span>.<span class="pl-c1">id</span>] <span class="pl-k">=</span> <span class="pl-c1">true</span>;</td>
+      </tr>
+      <tr>
+        <td id="file-watch-service-ts-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-watch-service-ts-LC7" class="blob-code blob-code-inner js-file-line">  }</td>
+      </tr>
+      <tr>
+        <td id="file-watch-service-ts-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-watch-service-ts-LC8" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-watch-service-ts-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-watch-service-ts-LC9" class="blob-code blob-code-inner js-file-line">  isWatched(<span class="pl-v">talk</span><span class="pl-k">:</span> <span class="pl-en">Talk</span>)<span class="pl-k">:</span> <span class="pl-c1">boolean</span> {</td>
+      </tr>
+      <tr>
+        <td id="file-watch-service-ts-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-watch-service-ts-LC10" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">return</span> <span class="pl-c1">this</span>.<span class="pl-smi">watched</span>[<span class="pl-smi">talk</span>.<span class="pl-c1">id</span>];</td>
+      </tr>
+      <tr>
+        <td id="file-watch-service-ts-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-watch-service-ts-LC11" class="blob-code blob-code-inner js-file-line">  }</td>
+      </tr>
+      <tr>
+        <td id="file-watch-service-ts-L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="file-watch-service-ts-LC12" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+</tbody></table>
+
+  </div>
+
+  </div>
+  
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/vsavkin/ddfece7c8a1c5eecb27974fd344bff06/raw/87bed4bb9dcb443a372597097a1c56da64747916/watch-service.ts" style="float:right">view raw</a>
+        <a href="https://gist.github.com/vsavkin/ddfece7c8a1c5eecb27974fd344bff06#file-watch-service-ts">watch-service.ts</a>
+        hosted with ❤ by <a href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+<script>var height = -1; var delayMs = 200;function notifyResize(height) {height = height ? height : document.documentElement.offsetHeight; var resized = false; if (window.donkey && donkey.resize) {donkey.resize(height); resized = true;}if (parent && parent._resizeIframe) {var obj = {iframe: window.frameElement, height: height}; parent._resizeIframe(obj); resized = true;}if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.resize) {window.webkit.messageHandlers.resize.postMessage(height); resized = true;}return resized;}function maybeResize() {if (document.documentElement.offsetHeight != height && notifyResize()) {height = document.documentElement.offsetHeight;}delayMs = Math.min(delayMs * 2, 1000000); setTimeout(maybeResize, delayMs);}maybeResize();</script></body></html>

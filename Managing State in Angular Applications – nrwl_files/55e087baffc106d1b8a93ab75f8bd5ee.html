@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- saved from url=(0079)https://blog.nrwl.io/media/55e087baffc106d1b8a93ab75f8bd5ee?postId=22b75ef5625f -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>talks-and-filters.ts – Medium</title><meta name="twitter:widgets:csp" content="on"><meta name="robots" content="noindex"><!--<base target="_blank">--><base href="." target="_blank"><style>body {text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: "ff-tisa-web-pro", Georgia, Cambria, "Times New Roman", Times, serif; font-weight: 400; color: #333332; font-size: 18px; line-height: 1.4; margin: 0; background-color: white; overflow: hidden;}iframe {max-width: 100%;}</style></head><body><style>.gist .gist-file { margin-bottom: 0 !important; }.gist { text-rendering: auto; }</style><script src="./7d74c404559808ebcadafdbb44e8ed7a.js" charset="utf-8"></script><link rel="stylesheet" href="./gist-embed-9f0a4ad9c85ca776e669003688baa9d55f9db315562ce4d231d37dab2714c70a.css"><div id="gist44799610" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-talks-and-filters-ts" class="file">
+    
+
+  <div itemprop="text" class="blob-wrapper data type-typescript">
+      <table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tbody><tr>
+        <td id="file-talks-and-filters-ts-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-talks-and-filters-ts-LC1" class="blob-code blob-code-inner js-file-line">@<span class="pl-en">Component</span>({</td>
+      </tr>
+      <tr>
+        <td id="file-talks-and-filters-ts-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-talks-and-filters-ts-LC2" class="blob-code blob-code-inner js-file-line">  selector: <span class="pl-s"><span class="pl-pds">'</span>app-cmp<span class="pl-pds">'</span></span>,</td>
+      </tr>
+      <tr>
+        <td id="file-talks-and-filters-ts-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-talks-and-filters-ts-LC3" class="blob-code blob-code-inner js-file-line">  templateUrl: <span class="pl-s"><span class="pl-pds">'</span>./talks-and-filters.html<span class="pl-pds">'</span></span>,</td>
+      </tr>
+      <tr>
+        <td id="file-talks-and-filters-ts-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-talks-and-filters-ts-LC4" class="blob-code blob-code-inner js-file-line">  styleUrls: [<span class="pl-s"><span class="pl-pds">'</span>./talks-and-filters.css<span class="pl-pds">'</span></span>]</td>
+      </tr>
+      <tr>
+        <td id="file-talks-and-filters-ts-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-talks-and-filters-ts-LC5" class="blob-code blob-code-inner js-file-line">})</td>
+      </tr>
+      <tr>
+        <td id="file-talks-and-filters-ts-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-talks-and-filters-ts-LC6" class="blob-code blob-code-inner js-file-line"><span class="pl-k">export</span> <span class="pl-k">class</span> <span class="pl-en">TalksAndFiltersCmp</span> {</td>
+      </tr>
+      <tr>
+        <td id="file-talks-and-filters-ts-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-talks-and-filters-ts-LC7" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">constructor</span>(<span class="pl-k">public</span> <span class="pl-v">backend</span><span class="pl-k">:</span> <span class="pl-en">Backend</span>) {}</td>
+      </tr>
+      <tr>
+        <td id="file-talks-and-filters-ts-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-talks-and-filters-ts-LC8" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-talks-and-filters-ts-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-talks-and-filters-ts-LC9" class="blob-code blob-code-inner js-file-line">  handleFiltersChange(<span class="pl-v">filters</span><span class="pl-k">:</span> <span class="pl-en">Filters</span>)<span class="pl-k">:</span> <span class="pl-c1">void</span> {</td>
+      </tr>
+      <tr>
+        <td id="file-talks-and-filters-ts-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-talks-and-filters-ts-LC10" class="blob-code blob-code-inner js-file-line">    <span class="pl-c1">this</span>.<span class="pl-smi">backend</span>.<span class="pl-en">changeFilters</span>(<span class="pl-smi">filters</span>);</td>
+      </tr>
+      <tr>
+        <td id="file-talks-and-filters-ts-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-talks-and-filters-ts-LC11" class="blob-code blob-code-inner js-file-line">  }</td>
+      </tr>
+      <tr>
+        <td id="file-talks-and-filters-ts-L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="file-talks-and-filters-ts-LC12" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+</tbody></table>
+
+  </div>
+
+  </div>
+  
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/vsavkin/7d74c404559808ebcadafdbb44e8ed7a/raw/08588a855da5efa36018cae0eb5fe7471a3dce92/talks-and-filters.ts" style="float:right">view raw</a>
+        <a href="https://gist.github.com/vsavkin/7d74c404559808ebcadafdbb44e8ed7a#file-talks-and-filters-ts">talks-and-filters.ts</a>
+        hosted with ❤ by <a href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+<script>var height = -1; var delayMs = 200;function notifyResize(height) {height = height ? height : document.documentElement.offsetHeight; var resized = false; if (window.donkey && donkey.resize) {donkey.resize(height); resized = true;}if (parent && parent._resizeIframe) {var obj = {iframe: window.frameElement, height: height}; parent._resizeIframe(obj); resized = true;}if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.resize) {window.webkit.messageHandlers.resize.postMessage(height); resized = true;}return resized;}function maybeResize() {if (document.documentElement.offsetHeight != height && notifyResize()) {height = document.documentElement.offsetHeight;}delayMs = Math.min(delayMs * 2, 1000000); setTimeout(maybeResize, delayMs);}maybeResize();</script></body></html>

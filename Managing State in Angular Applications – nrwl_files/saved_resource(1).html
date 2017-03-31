@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- saved from url=(0079)https://blog.nrwl.io/media/2e187e05ba80e396473effcd41a7be5a?postId=22b75ef5625f -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>backend.ts – Medium</title><meta name="twitter:widgets:csp" content="on"><meta name="robots" content="noindex"><!--<base target="_blank">--><base href="." target="_blank"><style>body {text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: "ff-tisa-web-pro", Georgia, Cambria, "Times New Roman", Times, serif; font-weight: 400; color: #333332; font-size: 18px; line-height: 1.4; margin: 0; background-color: white; overflow: hidden;}iframe {max-width: 100%;}</style></head><body><style>.gist .gist-file { margin-bottom: 0 !important; }.gist { text-rendering: auto; }</style><script src="./9e4a556b710dffdba49ac8b6adf27b07.js" charset="utf-8"></script><link rel="stylesheet" href="./gist-embed-9f0a4ad9c85ca776e669003688baa9d55f9db315562ce4d231d37dab2714c70a.css"><div id="gist44799665" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-backend-ts" class="file">
+    
+
+  <div itemprop="text" class="blob-wrapper data type-typescript">
+      <table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tbody><tr>
+        <td id="file-backend-ts-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-backend-ts-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-k">export</span> <span class="pl-k">class</span> <span class="pl-en">Backend</span> {</td>
+      </tr>
+      <tr>
+        <td id="file-backend-ts-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-backend-ts-LC2" class="blob-code blob-code-inner js-file-line">  <span class="pl-c"><span class="pl-c">//</span>...</span></td>
+      </tr>
+      <tr>
+        <td id="file-backend-ts-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-backend-ts-LC3" class="blob-code blob-code-inner js-file-line">  findTalk(<span class="pl-v">id</span><span class="pl-k">:</span> <span class="pl-c1">number</span>)<span class="pl-k">:</span> <span class="pl-en">Observable</span>&lt;<span class="pl-en">Talk</span>&gt; {</td>
+      </tr>
+      <tr>
+        <td id="file-backend-ts-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-backend-ts-LC4" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span> (<span class="pl-c1">this</span>.<span class="pl-smi">_talks</span>[<span class="pl-smi">id</span>]) <span class="pl-k">return</span> <span class="pl-k">of</span>(<span class="pl-c1">this</span>.<span class="pl-smi">_talks</span>[<span class="pl-smi">id</span>]);</td>
+      </tr>
+      <tr>
+        <td id="file-backend-ts-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-backend-ts-LC5" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-backend-ts-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-backend-ts-LC6" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">const</span> params <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">URLSearchParams</span>();</td>
+      </tr>
+      <tr>
+        <td id="file-backend-ts-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-backend-ts-LC7" class="blob-code blob-code-inner js-file-line">    <span class="pl-smi">params</span>.<span class="pl-c1">set</span>(<span class="pl-s"><span class="pl-pds">"</span>id<span class="pl-pds">"</span></span>, <span class="pl-smi">id</span>.<span class="pl-c1">toString</span>());</td>
+      </tr>
+      <tr>
+        <td id="file-backend-ts-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-backend-ts-LC8" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">return</span> <span class="pl-c1">this</span>.<span class="pl-smi">http</span>.<span class="pl-c1">get</span>(<span class="pl-s"><span class="pl-pds">`</span>${<span class="pl-c1">this</span>.<span class="pl-smi">url</span>}/talk/<span class="pl-pds">`</span></span>, {search: <span class="pl-smi">params</span>}).<span class="pl-en">map</span>(<span class="pl-v">r</span> <span class="pl-k">=&gt;</span> <span class="pl-c1">this</span>.<span class="pl-smi">_talks</span>[<span class="pl-smi">id</span>] <span class="pl-k">=</span> <span class="pl-smi">r</span>.<span class="pl-en">json</span>()[<span class="pl-s"><span class="pl-pds">'</span>talk<span class="pl-pds">'</span></span>]);</td>
+      </tr>
+      <tr>
+        <td id="file-backend-ts-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-backend-ts-LC9" class="blob-code blob-code-inner js-file-line">  }</td>
+      </tr>
+      <tr>
+        <td id="file-backend-ts-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-backend-ts-LC10" class="blob-code blob-code-inner js-file-line">  <span class="pl-c"><span class="pl-c">//</span>...</span></td>
+      </tr>
+      <tr>
+        <td id="file-backend-ts-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-backend-ts-LC11" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+</tbody></table>
+
+  </div>
+
+  </div>
+  
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/vsavkin/9e4a556b710dffdba49ac8b6adf27b07/raw/0900dbcf0f05acc707e490cade73dfe6cc79cf25/backend.ts" style="float:right">view raw</a>
+        <a href="https://gist.github.com/vsavkin/9e4a556b710dffdba49ac8b6adf27b07#file-backend-ts">backend.ts</a>
+        hosted with ❤ by <a href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+<script>var height = -1; var delayMs = 200;function notifyResize(height) {height = height ? height : document.documentElement.offsetHeight; var resized = false; if (window.donkey && donkey.resize) {donkey.resize(height); resized = true;}if (parent && parent._resizeIframe) {var obj = {iframe: window.frameElement, height: height}; parent._resizeIframe(obj); resized = true;}if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.resize) {window.webkit.messageHandlers.resize.postMessage(height); resized = true;}return resized;}function maybeResize() {if (document.documentElement.offsetHeight != height && notifyResize()) {height = document.documentElement.offsetHeight;}delayMs = Math.min(delayMs * 2, 1000000); setTimeout(maybeResize, delayMs);}maybeResize();</script></body></html>
